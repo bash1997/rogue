@@ -6,6 +6,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: #000000;
 	margin: 0 auto;
+	width: 1200px;
 
 }
 
@@ -23,9 +24,10 @@ span {
 	color: #77a466;
 }
 /***** GRID *****/
-/**.container {
-	float:left;
-}**/
+.container {
+	border-bottom:3px solid #77a466;
+	margin: 0 20px;
+}
 
 ul {
 	list-style: none;
@@ -40,10 +42,18 @@ header {
 }
 h1 {
 	float: left;
+	margin-left: 40px;
 }
 nav {
 	float: right;
 	padding: 20px 0;
+	font-size: 14px;
+	line-height: 25px;
+	font-weight: bold;
+	}
+
+	ul {
+		padding-right: 40px;
 	}
 
 nav ul li {
@@ -64,8 +74,7 @@ nav ul li {
 }
 
 .opening img {
-	border-top: 3px solid #77a466;
-	border-bottom: 3px solid #77a466;
+		border-bottom: 3px solid #77a466;
 	margin: 0 20px;
 }
 /***** BOTTOM SECTION *****/
