@@ -1,139 +1,162 @@
 @font-face{
 	font-family: 'Wisdom Script';
-	src: url('../font/wisdom-script.otf') format('opentype');
+	src: url('../fonts/wisdom-script.otf') format('opentype');
 }
-body {
-  font-family: 'Montserrat', sans-serif;
-  color: #000000;
-	margin: 0 auto;
-	width: 1200px;
 
+body {
+	font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+}
+
+.container{
+	width: 1200px;
+	margin: 0 auto;
 }
 
 h1, h2, h3, h4 {
+	color: black;
 	text-transform: uppercase;
 	font-weight: 700;
 }
 
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 24px;
+}
+
+h3 {
+	font-size: 18px;
+}
+
+h4 {
+	font-size: 12px;
+}
+
 p {
 	font-size: 14px;
-	padding: 0 30px;
+	line-height: 21px;
+    padding: 0 30px;
 }
 
-span {
-	color: #77a466;
-}
-/***** GRID *****/
-.container {
-	border-bottom:3px solid #77a466;
-	margin: 0 20px;
-}
-
-ul {
-	list-style: none;
-}
-
-li {
-	color: #77a466;
-}
-/***** HEADER *****/
 header {
-	overflow: auto;
+	height: 110px;
+	border-bottom: 3px solid #77a466;
+	margin: 0 auto;
 }
-h1 {
+
+header h1 {
 	float: left;
-	margin-left: 40px;
+	margin: 0;
+	padding: 38px 0;
 }
-nav {
+header h1 span {
+	color: #77a466;
+}
+
+header nav {
 	float: right;
-	padding: 20px 0;
+	padding: 46px 0;
+}
+header nav ul {
+	margin: 0;
+	padding: 0;
+}
+header nav ul li {
+	text-transform: uppercase;
+	font-weight: 700;
 	font-size: 14px;
-	line-height: 25px;
-	font-weight: bold;
-	}
-
-	ul {
-		padding-right: 40px;
-	}
-
-nav ul li {
-		display: inline;
+	padding: 0 10px;
+	display: inline;
+}
+header nav ul li a{
+	text-decoration: none;
+	color:#77a466;
 }
 
-	nav ul li a {
-		text-transform: uppercase;
-		text-decoration: none;
-		line-height: 23px;
-		padding-left: 25px;
-		color: inherit;
-	}
-
-/***** TOP SECTION *****/
-.opening {
-	clear:both;
-}
-
-.opening img {
-		border-bottom: 3px solid #77a466;
-	margin: 0 20px;
-}
-/***** BOTTOM SECTION *****/
+.top-section,
 .bottom-section {
-		border-top: 1px solid #eeeeee;
-		height:auto;
+	margin: 0 auto;
+	clear: both;
 }
 
-.section-one h4, .section-two h4, .section-three h4 {
-	font-size: 12px;
+.main-image {
+	height: auto;
+	float: left;
+}
+.main-image img {
+	border-bottom: 3px solid #77a466;
+}
+
+.main-title {
+	height: auto;
+	float: left;
+}
+.main-title h3 {
+	text-align: left;
+	padding: 5px 0;
+	color: #77a466;
+}
+.main-title p {
+	padding: 0;
+	font-size: 16px;
 	line-height: 25px;
 }
-.section-two h4, .section-three h4 {
-	padding: 10px 30px;
-}
- .section-one, .section-two, .section-three {
-	float: left;
-	width : 399px;
-}
-.section-one, .section-two {
-		border-right: 1px solid #eeeeee;
-}
-.section-one {
-	width:400px;
 
+.section-one,
+.section-two,
+.section-three {
+	width: 399px;
+	height: auto;
+	float: left;
+	border-top: 1px solid #eee;
+}
+
+.section-one h4 {
+	padding: 10px 0;
+}
+
+.section-two {
+	border-left: 1px solid #eee;
+	border-right: 1px solid #eee;
+}
+
+.section-two h4,
+.section-three h4 {
+	padding: 10px 30px;
 }
 
 .menu {
+	list-style: none;
 	padding: 0;
-	text-transform: uppercase;
-}
-
-.menu h4 {
-	padding: 10px 0;
 }
 .menu li {
-		padding: 10px 0;
+	padding: 10px 0;
+	color:#77a466;
 }
+
 .reviews {
-	line-height: 21px;
+	color: #333;
 	font-size: 16px;
+	line-height: 21px;
 }
 
 .address {
-	line-height: 24px;
 	font-size: 16px;
+	line-height: 24px;
 }
- /***** FOOTER *****/
- footer {
-	 font-size: 14px;
-	 line-height: 23px;
-	 text-align: center;
-	 clear: both;
-	 border-top: 3px solid #f0eef0;
-	 height: 50px;
- }
 
- footer span {
-	 font-family: 'Wisdom Script', cursive;
-	 text-transform: lowercase;
-	 font-weight: normal;
- }
+footer {
+	height: 50px;
+	border-top: 3px solid #eee;
+	margin: 0 auto;
+	clear: both;
+	text-align: center;
+}
+footer span {
+	font-family: 'Wisdom Script', cursive;
+	text-transform: lowercase;
+	color: #77a466;
+	font-size: 14px;
+}
